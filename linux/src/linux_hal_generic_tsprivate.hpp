@@ -39,7 +39,7 @@
 #include <pthread.h>
 #ifdef WITH_IGBLIB
 extern "C" {
-#include <igb.h>
+#include "../../../../lib/igb_avb/lib/igb.h"
 }
 /**
  * @brief Private IGB structure.
