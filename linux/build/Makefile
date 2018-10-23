@@ -90,8 +90,8 @@ HEADER_FILES = $(COMMON_DIR)/ether_port.hpp\
 		$(SRC_DIR)/platform.hpp
 
 ifeq ($(ARCH),I210)
-	IGB_LIB_INCPATH=../../../../lib/igb/
-	IGB_LIB_PATH=../../../../lib/igb/
+	IGB_LIB_INCPATH=../../../../lib/igb_avb/lib/
+	IGB_LIB_PATH=../../../../lib/igb_avb/lib/
 	CFLAGS_G += -I$(IGB_LIB_INCPATH) -DWITH_IGBLIB
 	LDFLAGS_G += -lz -ligb -lpci -L$(IGB_LIB_PATH)
 	OBJ_FILES += $(OBJ_DIR)/linux_hal_generic.o \
