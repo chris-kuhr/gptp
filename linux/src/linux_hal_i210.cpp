@@ -37,7 +37,7 @@
 
 extern "C" {
 #include <pci/pci.h>
-#include <igb.h>
+#include "../../../../lib/igb_avb/lib/igb.h"
 }
 
 #define IGB_BIND_NAMESZ 24
